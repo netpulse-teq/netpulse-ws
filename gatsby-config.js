@@ -9,8 +9,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Rewy - Gatsby React IT Startup & Technology Template`,
-    description: `Gatsby React IT Startup & Technology Template`,
+    title: `Netpulse`,
+    description: `Let's make smart things`,
     author: `@envytheme`,
     siteUrl: `https://rewy-gatsby.envytheme.com`,
   },
@@ -37,7 +37,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `./src/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `./src/images/favicon-netpulse.png`, // This path is relative to the root of the site.
       },
     },
   ],

@@ -1,6 +1,7 @@
-import React from "react"
 import { Link } from "gatsby"
-import logo from "../images/logo.png"
+import React from "react"
+// import logo from "../images/logo.png"
+import netPulseLogo from "../images/logo-netpulse.png"
 
 const ComingSoonPage = () => {
   const [days, setDays] = React.useState("")
@@ -16,7 +17,7 @@ const ComingSoonPage = () => {
   }, [])
 
   const commingSoonTime = () => {
-    let endTime = new Date("August 23, 2024 17:00:00 PDT")
+    let endTime = new Date("December 01, 2023 00:00:00 PDT")
     let endTimeParse = Date.parse(endTime) / 1000
     let now = new Date()
     let nowParse = Date.parse(now) / 1000
@@ -49,9 +50,9 @@ const ComingSoonPage = () => {
           <div className="d-table-cell">
             <div className="coming-soon-content">
               <Link to="/" className="logo">
-                <img src={logo} alt="logo" />
+                <img src={netPulseLogo} alt="logo" />
               </Link>
-              <h2>We Are Launching Soon</h2>
+              <h2>We are launching soon</h2>
 
               <div
                 id="timer"
@@ -83,7 +84,7 @@ const ComingSoonPage = () => {
                 </div>
               </div>
 
-              <form className="newsletter-form">
+              {/* <form className="newsletter-form">
                 <div className="form-group">
                   <input
                     type="email"
@@ -106,7 +107,7 @@ const ComingSoonPage = () => {
                   If you would like to be notified when your app is live, Please
                   subscribe to our mailing list.
                 </p>
-              </form>
+              </form> */}
             </div>
           </div>
         </div>
