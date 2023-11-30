@@ -17,7 +17,7 @@ const ComingSoonPage = () => {
   }, [])
 
   const commingSoonTime = () => {
-    let endTime = new Date("December 01, 2023 00:00:00 PDT")
+    let endTime = new Date("December 15, 2023 00:00:00 PDT")
     let endTimeParse = Date.parse(endTime) / 1000
     let now = new Date()
     let nowParse = Date.parse(now) / 1000
