@@ -1,28 +1,29 @@
 import * as React from "react"
+import Banner from "../components/Index/Banner"
+import OurBlog from "../components/Index/OurBlog"
+import OurFeatures from "../components/Index/OurFeatures"
+import OurServices from "../components/Index/OurServices"
+import OurSolutions from "../components/Index/OurSolutions"
+import Partner from "../components/Index/Partner"
+import Pricing from "../components/Index/Pricing"
+import ProjectStartArea from "../components/Index/ProjectStartArea"
+import RecentProjects from "../components/Index/RecentProjects"
+import TeamMember from "../components/Index/TeamMember"
+import Testimonials from "../components/Index/Testimonials"
+import Footer from "../components/_App/Footer"
+import Navbar from "../components/_App/Navbar"
 import Layout from "../components/_App/layout"
 import Seo from "../components/_App/seo"
-import ComingSoonPage from "./coming-soon"
-// import OurSolutions from "../components/Index/OurSolutions"
-// import OurServices from "../components/Index/OurServices"
-// import OurFeatures from "../components/Index/OurFeatures"
-// import TeamMember from "../components/Index/TeamMember" 
-// import RecentProjects from "../components/Index/RecentProjects"
-// import Pricing from "../components/Index/Pricing"
-// import Testimonials from "../components/Index/Testimonials"
-// import Partner from "../components/Index/Partner"
-// import OurBlog from "../components/Index/OurBlog"
-// import ProjectStartArea from "../components/Index/ProjectStartArea"
+
 
 const IndexPage = () => (
   <Layout>
 
-    {/* <Navbar />
+    <Navbar />
 
-    <Banner /> */}
+    <Banner />
 
-    <ComingSoonPage />
-
-    {/* <OurSolutions />
+    <OurSolutions />
 
     <OurServices />
 
@@ -40,9 +41,9 @@ const IndexPage = () => (
 
     <OurBlog />
 
-    <ProjectStartArea /> */}
+    <ProjectStartArea />
 
-    {/* <Footer /> */}
+    <Footer />
 
   </Layout>
 )
