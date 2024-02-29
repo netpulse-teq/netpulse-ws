@@ -1,7 +1,8 @@
 import { Link } from "gatsby"
 import React from "react"
 import { useRecoilState } from "recoil"
-import logo from "../../images/logo.png"
+// import logo from "../../images/logo.png"
+import logo from "../../images/logo-netpulse-simple.svg"
 import { collapsedState } from "../../utils/recoil-atoms"
 
 const Navbar = () => {

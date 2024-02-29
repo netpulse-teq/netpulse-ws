@@ -1,15 +1,15 @@
 import * as React from "react"
 import Banner from "../components/Index/Banner"
-import OurBlog from "../components/Index/OurBlog"
+// import OurBlog from "../components/Index/OurBlog"
 import OurFeatures from "../components/Index/OurFeatures"
 import OurServices from "../components/Index/OurServices"
 import OurSolutions from "../components/Index/OurSolutions"
 import Partner from "../components/Index/Partner"
-import Pricing from "../components/Index/Pricing"
+// import Pricing from "../components/Index/Pricing"
 import ProjectStartArea from "../components/Index/ProjectStartArea"
-import RecentProjects from "../components/Index/RecentProjects"
+// import RecentProjects from "../components/Index/RecentProjects"
 import TeamMember from "../components/Index/TeamMember"
-import Testimonials from "../components/Index/Testimonials"
+// import Testimonials from "../components/Index/Testimonials"
 import Footer from "../components/_App/Footer"
 import Navbar from "../components/_App/Navbar"
 import Layout from "../components/_App/layout"
@@ -31,15 +31,15 @@ const IndexPage = () => (
 
     <TeamMember />
 
-    <RecentProjects />
+    {/* <RecentProjects /> */}
 
-    <Pricing />
+    {/* <Pricing /> */}
 
-    <Testimonials />
+    {/* <Testimonials /> */}
 
     <Partner />
 
-    <OurBlog />
+    {/* <OurBlog /> */}
 
     <ProjectStartArea />
 
