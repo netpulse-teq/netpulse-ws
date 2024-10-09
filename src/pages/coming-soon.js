@@ -54,7 +54,7 @@ const ComingSoonPage = () => {
               </Link>
               <h2>We are launching soon</h2>
 
-              <div
+              {/* <div
                 id="timer"
                 className="flex-wrap d-flex justify-content-center"
               >
@@ -82,7 +82,7 @@ const ComingSoonPage = () => {
                 >
                   {seconds} <span>Seconds</span>
                 </div>
-              </div>
+              </div> */}
 
               {/* <form className="newsletter-form">
                 <div className="form-group">
