@@ -102,7 +102,6 @@ const ComingSoonPage = () => {
                   <i className="flaticon-user"></i>
                   Subscribe <span></span>
                 </button>
-
                 <p>
                   If you would like to be notified when your app is live, Please
                   subscribe to our mailing list.
