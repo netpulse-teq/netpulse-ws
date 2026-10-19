@@ -20,7 +20,6 @@ import Footer from "../components/_App/Footer"
 const DataAnalyticsMlConsultingPage = () => {
   return (
     <Layout>
-
       <NavbarThree />
 
       <MainBanner />
@@ -50,7 +49,6 @@ const DataAnalyticsMlConsultingPage = () => {
       <StartProjectTwo />
 
       <Footer />
-
     </Layout>
   )
 }

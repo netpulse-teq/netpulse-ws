@@ -42,7 +42,10 @@ const CaseStudySlider = () => {
                         magna aliqua. Quis ipsum suspendisse ultrices gravida.
                       </p>
 
-                      <Link to="/case-studies/case-studies-details" className="default-btn">
+                      <Link
+                        to="/case-studies/case-studies-details"
+                        className="default-btn"
+                      >
                         <i className="flaticon-view"></i>
                         Details More <span></span>
                       </Link>
@@ -51,7 +54,10 @@ const CaseStudySlider = () => {
 
                   <div className="col-lg-6 col-md-12">
                     <div className="case-study-image">
-                      <Link to="/case-studies/case-studies-details" className="d-block">
+                      <Link
+                        to="/case-studies/case-studies-details"
+                        className="d-block"
+                      >
                         <img src={study1} alt="banner" />
                       </Link>
                     </div>
@@ -83,7 +89,10 @@ const CaseStudySlider = () => {
                         magna aliqua. Quis ipsum suspendisse ultrices gravida.
                       </p>
 
-                      <Link to="/case-studies/case-studies-details" className="default-btn">
+                      <Link
+                        to="/case-studies/case-studies-details"
+                        className="default-btn"
+                      >
                         <i className="flaticon-view"></i>
                         Details More <span></span>
                       </Link>
@@ -92,7 +101,10 @@ const CaseStudySlider = () => {
 
                   <div className="col-lg-6 col-md-12">
                     <div className="case-study-image">
-                      <Link to="/case-studies/case-studies-details" className="d-block">
+                      <Link
+                        to="/case-studies/case-studies-details"
+                        className="d-block"
+                      >
                         <img src={study2} alt="banner" />
                       </Link>
                     </div>

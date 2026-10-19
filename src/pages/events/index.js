@@ -9,7 +9,6 @@ import Footer from "../../components/_App/Footer"
 const EventsPage = () => {
   return (
     <Layout>
-
       <Navbar />
 
       <PageBanner
@@ -22,7 +21,6 @@ const EventsPage = () => {
       <EventsCard />
 
       <Footer />
-
     </Layout>
   )
 }

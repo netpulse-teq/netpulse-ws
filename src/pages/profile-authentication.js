@@ -10,7 +10,6 @@ import Footer from "../components/_App/Footer"
 const ProfileAuthenticationPage = () => {
   return (
     <Layout>
-
       <Navbar />
 
       <PageBanner
@@ -35,7 +34,6 @@ const ProfileAuthenticationPage = () => {
       </section>
 
       <Footer />
-      
     </Layout>
   )
 }

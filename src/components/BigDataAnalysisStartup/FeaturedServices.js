@@ -21,7 +21,9 @@ const FeaturedServices = () => {
                   <i className="flaticon-analysis"></i>
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Analyze Your Data Needs</Link>
+                  <Link to="/services/service-details">
+                    Analyze Your Data Needs
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -40,7 +42,9 @@ const FeaturedServices = () => {
                   <i className="flaticon-structure"></i>
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Develop A Customized Plan</Link>
+                  <Link to="/services/service-details">
+                    Develop A Customized Plan
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -59,7 +63,9 @@ const FeaturedServices = () => {
                   <i className="flaticon-idea"></i>
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Implement Your Solution</Link>
+                  <Link to="/services/service-details">
+                    Implement Your Solution
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

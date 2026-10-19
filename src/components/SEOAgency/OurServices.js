@@ -116,7 +116,9 @@ const OurServices = () => {
                   <img src={serviceIcon11} alt="services" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Content Optimization</Link>
+                  <Link to="/services/service-details">
+                    Content Optimization
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

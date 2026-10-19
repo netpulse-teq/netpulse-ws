@@ -10,7 +10,7 @@ const CaseStudiesSidebar = () => {
               <div className="icon">
                 <i className="bx bx-user-pin"></i>
               </div>
-              
+
               <span>Client:</span>
               <a href="https://envytheme.com/" target="_blank" rel="noreferrer">
                 EnvyTheme.com

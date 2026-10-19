@@ -39,7 +39,9 @@ const RelatedServices = () => {
                   <img src={icon2} alt="about" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">AI & ML Development</Link>
+                  <Link to="/services/service-details">
+                    AI & ML Development
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

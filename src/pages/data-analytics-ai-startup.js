@@ -19,7 +19,6 @@ import Footer from "../components/_App/Footer"
 const DataAnalyticsAiStartupPage = () => {
   return (
     <Layout>
-
       <Navbar />
 
       <MainBanner />
@@ -47,7 +46,6 @@ const DataAnalyticsAiStartupPage = () => {
       <OurBlog />
 
       <Footer />
-      
     </Layout>
   )
 }

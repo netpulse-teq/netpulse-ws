@@ -1,8 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import starIcon from "../../images/star-icon.png"
+import { useTranslation } from "../../utils/useTranslation"
 
 const OurSolutions = () => {
+  const { t } = useTranslation()
+
   return (
     <>
       <section className="solutions-area pb-70">
@@ -10,13 +13,10 @@ const OurSolutions = () => {
           <div className="section-title">
             <span className="sub-title">
               <img src={starIcon} alt="star" />
-              Our Solutions
+              {t("solutionsSubTitle")}
             </span>
-            <h2>We Different From Others Should Choose Us</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
-            </p>
+            <h2>{t("solutionsTitle")}</h2>
+            <p>{t("solutionsDesc")}</p>
           </div>
 
           <div className="row">
@@ -26,15 +26,17 @@ const OurSolutions = () => {
                   <i className="flaticon-rocket"></i>
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Code Security</Link>
+                  <Link to="/services/service-details">
+                    {t("codeSecurityTitle")}
+                  </Link>
                 </h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et.
-                </p>
+                <p>{t("codeSecurityDesc")}</p>
 
-                <Link to="/services/service-details" className="view-details-btn">
-                  View Details
+                <Link
+                  to="/services/service-details"
+                  className="view-details-btn"
+                >
+                  {t("viewDetails")}
                 </Link>
               </div>
             </div>
@@ -46,16 +48,18 @@ const OurSolutions = () => {
                 </div>
 
                 <h3>
-                  <Link to="/services/service-details">Team Management</Link>
+                  <Link to="/services/service-details">
+                    {t("teamManagementTitle")}
+                  </Link>
                 </h3>
 
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et.
-                </p>
+                <p>{t("teamManagementDesc")}</p>
 
-                <Link to="/services/service-details" className="view-details-btn">
-                  View Details
+                <Link
+                  to="/services/service-details"
+                  className="view-details-btn"
+                >
+                  {t("viewDetails")}
                 </Link>
               </div>
             </div>
@@ -67,16 +71,18 @@ const OurSolutions = () => {
                 </div>
 
                 <h3>
-                  <Link to="/services/service-details">Access Controlled</Link>
+                  <Link to="/services/service-details">
+                    {t("accessControlledTitle")}
+                  </Link>
                 </h3>
 
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et.
-                </p>
+                <p>{t("accessControlledDesc")}</p>
 
-                <Link to="/services/service-details" className="view-details-btn">
-                  View Details
+                <Link
+                  to="/services/service-details"
+                  className="view-details-btn"
+                >
+                  {t("viewDetails")}
                 </Link>
               </div>
             </div>

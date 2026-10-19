@@ -5,11 +5,14 @@ import client1 from "../../images/testimonials/client1.jpg"
 import client2 from "../../images/testimonials/client2.jpg"
 import client3 from "../../images/testimonials/client3.jpg"
 import shape from "../../images/shape/shape1.svg"
+import { useTranslation } from "../../utils/useTranslation"
 
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Autoplay } from "swiper"
 
 const Testimonials = () => {
+  const { t } = useTranslation()
+
   return (
     <>
       <div className="testimonials-area pt-100 bg-f1f8fb">
@@ -17,13 +20,10 @@ const Testimonials = () => {
           <div className="section-title">
             <span className="sub-title">
               <img src={starIcon} alt="testimonial" />
-              Testimonials
+              {t("testimonials")}
             </span>
-            <h2>What Our Clients are Saying?</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
-            </p>
+            <h2>{t("whatClientsSayTitle")}</h2>
+            <p>{t("whatClientsSayDesc")}</p>
           </div>
 
           <Swiper
@@ -47,12 +47,7 @@ const Testimonials = () => {
           >
             <SwiperSlide>
               <div className="single-testimonials-item">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna ali.
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                  maecenas accumsan lacus vel facilisis.
-                </p>
+                <p>{t("testimonial1Text")}</p>
 
                 <div className="client-info">
                   <div className="d-flex justify-content-center align-items-center">
@@ -68,12 +63,7 @@ const Testimonials = () => {
 
             <SwiperSlide>
               <div className="single-testimonials-item">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna ali.
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                  maecenas accumsan lacus vel facilisis.
-                </p>
+                <p>{t("testimonial2Text")}</p>
 
                 <div className="client-info">
                   <div className="d-flex justify-content-center align-items-center">
@@ -89,12 +79,7 @@ const Testimonials = () => {
 
             <SwiperSlide>
               <div className="single-testimonials-item">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna ali.
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                  maecenas accumsan lacus vel facilisis.
-                </p>
+                <p>{t("testimonial3Text")}</p>
                 <div className="client-info">
                   <div className="d-flex justify-content-center align-items-center">
                     <img src={client3} alt="testimonial" />
@@ -111,7 +96,7 @@ const Testimonials = () => {
           <div className="testimonials-view-btn text-center">
             <Link to="/testimonials" className="default-btn">
               <i className="flaticon-view"></i>
-              Check Out All Reviews <span></span>
+              {t("checkAllReviews")} <span></span>
             </Link>
           </div>
         </div>

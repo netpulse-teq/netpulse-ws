@@ -73,7 +73,9 @@ const Services = () => {
                   <img src={ServiceIcon9} alt="Service Icon" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Marketing Analytics</Link>
+                  <Link to="/services/service-details">
+                    Marketing Analytics
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -117,7 +119,9 @@ const Services = () => {
                   <img src={ServiceIcon11} alt="Service Icon" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Securities Research</Link>
+                  <Link to="/services/service-details">
+                    Securities Research
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

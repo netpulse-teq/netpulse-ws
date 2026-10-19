@@ -18,9 +18,8 @@ import Footer from "../components/_App/Footer"
 const DataScienceMlCompanyPage = () => {
   return (
     <Layout>
-
       <Navbar />
-      
+
       <MainBanner />
 
       <OurSolutions />
@@ -44,7 +43,6 @@ const DataScienceMlCompanyPage = () => {
       <StartProject />
 
       <Footer />
-
     </Layout>
   )
 }

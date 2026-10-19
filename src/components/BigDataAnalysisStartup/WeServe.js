@@ -23,7 +23,10 @@ const WeServe = () => {
                   <i className="flaticon-factory"></i>
                 </div>
                 Manufacturing
-                <Link to="/services/service-details" className="link-btn"></Link>
+                <Link
+                  to="/services/service-details"
+                  className="link-btn"
+                ></Link>
               </div>
             </div>
 
@@ -33,7 +36,10 @@ const WeServe = () => {
                   <i className="flaticon-hospital"></i>
                 </div>
                 Healthcare
-                <Link to="/services/service-details" className="link-btn"></Link>
+                <Link
+                  to="/services/service-details"
+                  className="link-btn"
+                ></Link>
               </div>
             </div>
 
@@ -43,7 +49,10 @@ const WeServe = () => {
                   <i className="flaticon-tracking"></i>
                 </div>
                 Automobile
-                <Link to="/services/service-details" className="link-btn"></Link>
+                <Link
+                  to="/services/service-details"
+                  className="link-btn"
+                ></Link>
               </div>
             </div>
 
@@ -53,7 +62,10 @@ const WeServe = () => {
                   <i className="flaticon-investment"></i>
                 </div>
                 Banking
-                <Link to="/services/service-details" className="link-btn"></Link>
+                <Link
+                  to="/services/service-details"
+                  className="link-btn"
+                ></Link>
               </div>
             </div>
 
@@ -63,7 +75,10 @@ const WeServe = () => {
                   <i className="flaticon-house"></i>
                 </div>
                 Real Estate
-                <Link to="/services/service-details" className="link-btn"></Link>
+                <Link
+                  to="/services/service-details"
+                  className="link-btn"
+                ></Link>
               </div>
             </div>
 
@@ -73,7 +88,10 @@ const WeServe = () => {
                   <i className="flaticon-order"></i>
                 </div>
                 Logistics
-                <Link to="/services/service-details" className="link-btn"></Link>
+                <Link
+                  to="/services/service-details"
+                  className="link-btn"
+                ></Link>
               </div>
             </div>
 
@@ -83,7 +101,10 @@ const WeServe = () => {
                   <i className="flaticon-family-insurance"></i>
                 </div>
                 Insurance
-                <Link to="/services/service-details" className="link-btn"></Link>
+                <Link
+                  to="/services/service-details"
+                  className="link-btn"
+                ></Link>
               </div>
             </div>
 
@@ -93,7 +114,10 @@ const WeServe = () => {
                   <i className="flaticon-bitcoin"></i>
                 </div>
                 Capital Markets
-                <Link to="/services/service-details" className="link-btn"></Link>
+                <Link
+                  to="/services/service-details"
+                  className="link-btn"
+                ></Link>
               </div>
             </div>
           </div>

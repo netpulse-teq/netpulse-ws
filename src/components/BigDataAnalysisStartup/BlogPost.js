@@ -9,18 +9,18 @@ import User2 from "../../images/user2.jpg"
 import User3 from "../../images/user3.jpg"
 import VectorShape1 from "../../images/shape/vector-shape1.png"
 import VectorShape2 from "../../images/shape/vector-shape2.png"
+import { useTranslation } from "../../utils/useTranslation"
 
 const BlogPost = () => {
+  const { t } = useTranslation()
+
   return (
     <>
       <section className="blog-area pt-100 pb-70">
         <div className="container">
           <div className="section-title">
-            <h2>Latest Valuable Insights</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
-            </p>
+            <h2>{t("blogPostTitle")}</h2>
+            <p>{t("blogPostDesc")}</p>
           </div>
 
           <div className="row">
@@ -49,9 +49,7 @@ const BlogPost = () => {
                     </li>
                   </ul>
                   <h3>
-                    <Link to="/blog/blog-details">
-                      Six Ways to Make Smarter Decisions
-                    </Link>
+                    <Link to="/blog/blog-details">{t("post1Title")}</Link>
                   </h3>
                 </div>
               </div>
@@ -82,9 +80,7 @@ const BlogPost = () => {
                     </li>
                   </ul>
                   <h3>
-                    <Link to="/blog/blog-details">
-                      The Challenges to Tackle Before You Start With AI
-                    </Link>
+                    <Link to="/blog/blog-details">{t("post2Title")}</Link>
                   </h3>
                 </div>
               </div>
@@ -115,9 +111,7 @@ const BlogPost = () => {
                     </li>
                   </ul>
                   <h3>
-                    <Link to="/blog/blog-details">
-                      Why Organisations Want an Analytics Platform
-                    </Link>
+                    <Link to="/blog/blog-details">{t("post3Title")}</Link>
                   </h3>
                 </div>
               </div>

@@ -9,7 +9,6 @@ import Footer from "../../components/_App/Footer"
 const CaseStudiesPage = () => {
   return (
     <Layout>
-
       <Navbar />
 
       <PageBanner
@@ -22,7 +21,6 @@ const CaseStudiesPage = () => {
       <TwoColumns />
 
       <Footer />
-
     </Layout>
   )
 }

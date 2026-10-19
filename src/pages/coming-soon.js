@@ -53,7 +53,7 @@ const ComingSoonPage = () => {
                 <img src={netPulseLogo} alt="logo" />
               </Link>
               <h2>We are launching soon</h2>
-{/* 
+              {/* 
               <div
                 id="timer"
                 className="flex-wrap d-flex justify-content-center"

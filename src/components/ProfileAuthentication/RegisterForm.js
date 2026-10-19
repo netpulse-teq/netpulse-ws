@@ -9,11 +9,7 @@ const RegisterForm = () => {
         <form>
           <div className="form-group">
             <label htmlFor="name">Name</label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Name"
-            />
+            <input type="text" className="form-control" placeholder="Name" />
           </div>
 
           <div className="form-group">

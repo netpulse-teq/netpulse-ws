@@ -10,7 +10,6 @@ import Footer from "../components/_App/Footer"
 const HistoryPage = () => {
   return (
     <Layout>
-
       <Navbar />
 
       <PageBanner
@@ -23,9 +22,8 @@ const HistoryPage = () => {
       <OurHistoryContentOne />
 
       <OurHistoryContentTwo />
-      
-      <Footer />
 
+      <Footer />
     </Layout>
   )
 }

@@ -1,11 +1,14 @@
 import React from "react"
 import { useRecoilState } from "recoil"
-import { collapsedState } from "../../utils/recoil-atoms"
+import { collapsedState, languageState } from "../../utils/recoil-atoms"
 import { Link } from "gatsby"
-import logo from "../../images/logo.png"
+import logo from "../../images/logo-icon.svg"
+import { useTranslation } from "../../utils/useTranslation"
 
 const Navbar = () => {
   const [collapsed, setCollapsed] = useRecoilState(collapsedState)
+  const [lang, setLang] = useRecoilState(languageState)
+  const { t } = useTranslation()
 
   const toggleNavbar = () => {
     setCollapsed(!collapsed)
@@ -13,14 +16,16 @@ const Navbar = () => {
 
   React.useEffect(() => {
     let elementId = document.getElementById("navbar")
-    document.addEventListener("scroll", () => {
+    const handleScroll = () => {
       if (window.scrollY > 170) {
         elementId.classList.add("is-sticky")
       } else {
         elementId.classList.remove("is-sticky")
       }
-    })
-  })
+    }
+    document.addEventListener("scroll", handleScroll)
+    return () => document.removeEventListener("scroll", handleScroll)
+  }, [])
 
   const classOne = collapsed
     ? "collapse navbar-collapse"
@@ -66,7 +71,7 @@ const Navbar = () => {
                       onClick={e => e.preventDefault()}
                       className="nav-link"
                     >
-                      Home <i className="bx bx-chevron-down"></i>
+                      {t("home")} <i className="bx bx-chevron-down"></i>
                     </Link>
 
                     <ul className="dropdown-menu">
@@ -77,7 +82,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          IT Services
+                          {t("itServices")}
                         </Link>
                       </li>
 
@@ -88,7 +93,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          SEO Agency
+                          {t("seoAgency")}
                         </Link>
                       </li>
 
@@ -99,7 +104,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Data Science ML Company
+                          {t("dataScienceMlCompany")}
                         </Link>
                       </li>
 
@@ -110,7 +115,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Data Analytics & AI Startup
+                          {t("dataAnalyticsAiStartup")}
                         </Link>
                       </li>
 
@@ -121,7 +126,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Digital Marketing Agency
+                          {t("digitalMarketingAgency")}
                         </Link>
                       </li>
 
@@ -132,7 +137,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Data Science Online Courses
+                          {t("dataScienceOnlineCourses")}
                         </Link>
                       </li>
 
@@ -143,7 +148,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Big Data Analysis Startup
+                          {t("bigDataAnalysisStartup")}
                         </Link>
                       </li>
 
@@ -154,7 +159,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Data Analytics ML Consulting
+                          {t("dataAnalyticsMlConsulting")}
                         </Link>
                       </li>
 
@@ -165,7 +170,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Machine Learning AI Solutions
+                          {t("machineLearningAiSolutions")}
                         </Link>
                       </li>
                     </ul>
@@ -177,7 +182,7 @@ const Navbar = () => {
                       onClick={e => e.preventDefault()}
                       className="nav-link"
                     >
-                      About Us <i className="bx bx-chevron-down"></i>
+                      {t("aboutUs")} <i className="bx bx-chevron-down"></i>
                     </Link>
 
                     <ul className="dropdown-menu">
@@ -188,7 +193,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          About Us
+                          {t("aboutUs")}
                         </Link>
                       </li>
 
@@ -199,7 +204,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          History
+                          {t("history")}
                         </Link>
                       </li>
 
@@ -210,7 +215,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Testimonials
+                          {t("testimonials")}
                         </Link>
                       </li>
 
@@ -221,7 +226,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Team
+                          {t("team")}
                         </Link>
                       </li>
                     </ul>
@@ -233,7 +238,7 @@ const Navbar = () => {
                       onClick={e => e.preventDefault()}
                       className="nav-link"
                     >
-                      Services <i className="bx bx-chevron-down"></i>
+                      {t("services")} <i className="bx bx-chevron-down"></i>
                     </Link>
 
                     <ul className="dropdown-menu">
@@ -244,7 +249,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Services
+                          {t("services")}
                         </Link>
                       </li>
 
@@ -255,7 +260,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Service Details
+                          {t("serviceDetails")}
                         </Link>
                       </li>
                     </ul>
@@ -267,7 +272,7 @@ const Navbar = () => {
                       onClick={e => e.preventDefault()}
                       className="nav-link"
                     >
-                      Case Studies <i className="bx bx-chevron-down"></i>
+                      {t("caseStudies")} <i className="bx bx-chevron-down"></i>
                     </Link>
 
                     <ul className="dropdown-menu">
@@ -278,7 +283,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Case Studies
+                          {t("caseStudies")}
                         </Link>
                       </li>
 
@@ -289,7 +294,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Case Studies Details
+                          {t("caseStudiesDetails")}
                         </Link>
                       </li>
                     </ul>
@@ -301,7 +306,7 @@ const Navbar = () => {
                       onClick={e => e.preventDefault()}
                       className="nav-link"
                     >
-                      Pages <i className="bx bx-chevron-down"></i>
+                      {t("pages")} <i className="bx bx-chevron-down"></i>
                     </Link>
 
                     <ul className="dropdown-menu">
@@ -311,7 +316,7 @@ const Navbar = () => {
                           onClick={e => e.preventDefault()}
                           className="nav-link"
                         >
-                          Courses <i className="bx bx-chevron-down"></i>
+                          {t("courses")} <i className="bx bx-chevron-down"></i>
                         </Link>
 
                         <ul className="dropdown-menu">
@@ -322,7 +327,7 @@ const Navbar = () => {
                               onClick={() => setCollapsed(true)}
                               className="nav-link"
                             >
-                              Courses
+                              {t("courses")}
                             </Link>
                           </li>
 
@@ -333,7 +338,7 @@ const Navbar = () => {
                               onClick={() => setCollapsed(true)}
                               className="nav-link"
                             >
-                              Course Details
+                              {t("courseDetails")}
                             </Link>
                           </li>
                         </ul>
@@ -345,7 +350,7 @@ const Navbar = () => {
                           onClick={e => e.preventDefault()}
                           className="nav-link"
                         >
-                          Events <i className="bx bx-chevron-down"></i>
+                          {t("events")} <i className="bx bx-chevron-down"></i>
                         </Link>
 
                         <ul className="dropdown-menu">
@@ -356,7 +361,7 @@ const Navbar = () => {
                               onClick={() => setCollapsed(true)}
                               className="nav-link"
                             >
-                              Events
+                              {t("events")}
                             </Link>
                           </li>
 
@@ -367,7 +372,7 @@ const Navbar = () => {
                               onClick={() => setCollapsed(true)}
                               className="nav-link"
                             >
-                              Event Details
+                              {t("eventDetails")}
                             </Link>
                           </li>
                         </ul>
@@ -380,7 +385,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Contact
+                          {t("contact")}
                         </Link>
                       </li>
 
@@ -391,7 +396,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Gallery
+                          {t("gallery")}
                         </Link>
                       </li>
 
@@ -402,7 +407,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          FAQ
+                          {t("faq")}
                         </Link>
                       </li>
 
@@ -413,7 +418,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Coming Soon
+                          {t("comingSoon")}
                         </Link>
                       </li>
 
@@ -424,7 +429,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Membership Levels
+                          {t("membershipLevels")}
                         </Link>
                       </li>
 
@@ -435,7 +440,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Login/Register
+                          {t("loginRegister")}
                         </Link>
                       </li>
 
@@ -446,7 +451,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Privacy Policy
+                          {t("privacyPolicy")}
                         </Link>
                       </li>
 
@@ -457,7 +462,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Terms of Service
+                          {t("termsOfService")}
                         </Link>
                       </li>
 
@@ -468,7 +473,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          404 Error Page
+                          {t("errorPage")}
                         </Link>
                       </li>
                     </ul>
@@ -480,7 +485,7 @@ const Navbar = () => {
                       onClick={e => e.preventDefault()}
                       className="nav-link"
                     >
-                      Blog <i className="bx bx-chevron-down"></i>
+                      {t("blog")} <i className="bx bx-chevron-down"></i>
                     </Link>
 
                     <ul className="dropdown-menu">
@@ -491,7 +496,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Blog
+                          {t("blog")}
                         </Link>
                       </li>
 
@@ -502,7 +507,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Blog Details
+                          {t("blogDetails")}
                         </Link>
                       </li>
                     </ul>
@@ -511,17 +516,80 @@ const Navbar = () => {
 
                 <div className="others-option d-flex align-items-center">
                   <div className="option-item">
+                    <div
+                      className="language-switcher-toggle"
+                      style={{
+                        display: "flex",
+                        background: "#f3f4f6",
+                        borderRadius: "30px",
+                        padding: "3px",
+                        marginRight: "15px",
+                        userSelect: "none",
+                      }}
+                    >
+                      <button
+                        type="button"
+                        onClick={() => setLang("fr")}
+                        style={{
+                          border: "none",
+                          background: lang === "fr" ? "#ffffff" : "transparent",
+                          color: lang === "fr" ? "#147dc8" : "#6b7280",
+                          padding: "6px 14px",
+                          borderRadius: "20px",
+                          fontSize: "13px",
+                          fontWeight: "700",
+                          cursor: "pointer",
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "5px",
+                          boxShadow:
+                            lang === "fr"
+                              ? "0 1px 3px rgba(0,0,0,0.1)"
+                              : "none",
+                          transition: "all 0.2s ease",
+                        }}
+                      >
+                        <span>🇫🇷</span> FR
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setLang("en")}
+                        style={{
+                          border: "none",
+                          background: lang === "en" ? "#ffffff" : "transparent",
+                          color: lang === "en" ? "#147dc8" : "#6b7280",
+                          padding: "6px 14px",
+                          borderRadius: "20px",
+                          fontSize: "13px",
+                          fontWeight: "700",
+                          cursor: "pointer",
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "5px",
+                          boxShadow:
+                            lang === "en"
+                              ? "0 1px 3px rgba(0,0,0,0.1)"
+                              : "none",
+                          transition: "all 0.2s ease",
+                        }}
+                      >
+                        <span>🇬🇧</span> EN
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* <div className="option-item">
                     <form className="search-box">
                       <input
                         type="text"
                         className="input-search"
-                        placeholder="Search for anything"
+                        placeholder={t("searchPlaceholder")}
                       />
                       <button type="submit">
                         <i className="flaticon-loupe"></i>
                       </button>
                     </form>
-                  </div>
+                  </div> */}
 
                   <div className="option-item">
                     <Link
@@ -530,7 +598,7 @@ const Navbar = () => {
                       onClick={() => setCollapsed(true)}
                       className="default-btn"
                     >
-                      <i className="flaticon-right"></i> Get Started{" "}
+                      <i className="flaticon-right"></i> {t("getStarted")}{" "}
                       <span></span>
                     </Link>
                   </div>

@@ -17,7 +17,9 @@ const FeaturedService = () => {
                   <img src={icon1} alt="banner" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Marketing Analytics</Link>
+                  <Link to="/services/service-details">
+                    Marketing Analytics
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
