@@ -9,7 +9,6 @@ import Footer from "../../components/_App/Footer"
 const BlogPage = () => {
   return (
     <Layout>
-
       <Navbar />
 
       <PageBanner
@@ -22,7 +21,6 @@ const BlogPage = () => {
       <BlogCard />
 
       <Footer />
-
     </Layout>
   )
 }

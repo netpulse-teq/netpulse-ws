@@ -15,7 +15,6 @@ import Footer from "../components/_App/Footer"
 const AboutUsPage = () => {
   return (
     <Layout>
-      
       <Navbar />
 
       <PageBanner
@@ -40,7 +39,6 @@ const AboutUsPage = () => {
       <Partner />
 
       <Footer />
-
     </Layout>
   )
 }

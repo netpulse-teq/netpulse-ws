@@ -90,7 +90,9 @@ const OurServices = () => {
                   <img src={icon3} alt="Icon" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Social Media Analytics</Link>
+                  <Link to="/services/service-details">
+                    Social Media Analytics
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -118,7 +120,9 @@ const OurServices = () => {
                   <img src={icon4} alt="Icon" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Real Time Analytics</Link>
+                  <Link to="/services/service-details">
+                    Real Time Analytics
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

@@ -41,7 +41,10 @@ const CaseStudy = () => {
                         magna aliqua. Quis ipsum suspendisse ultrices gravida.
                       </p>
 
-                      <Link to="/case-studies/case-studies-details" className="default-btn">
+                      <Link
+                        to="/case-studies/case-studies-details"
+                        className="default-btn"
+                      >
                         <i className="flaticon-view"></i>
                         Details More
                         <span></span>
@@ -51,7 +54,10 @@ const CaseStudy = () => {
 
                   <div className="col-lg-6 col-md-12">
                     <div className="case-study-image">
-                      <Link to="/case-studies/case-studies-details" className="d-block">
+                      <Link
+                        to="/case-studies/case-studies-details"
+                        className="d-block"
+                      >
                         <img src={caseStudy1} alt="case-study" />
                       </Link>
                     </div>
@@ -83,7 +89,10 @@ const CaseStudy = () => {
                         magna aliqua. Quis ipsum suspendisse ultrices gravida.
                       </p>
 
-                      <Link to="/case-studies/case-studies-details" className="default-btn">
+                      <Link
+                        to="/case-studies/case-studies-details"
+                        className="default-btn"
+                      >
                         <i className="flaticon-view"></i>
                         Details More
                         <span></span>
@@ -93,7 +102,10 @@ const CaseStudy = () => {
 
                   <div className="col-lg-6 col-md-12">
                     <div className="case-study-image">
-                      <Link to="/case-studies/case-studies-details" className="d-block">
+                      <Link
+                        to="/case-studies/case-studies-details"
+                        className="d-block"
+                      >
                         <img src={caseStudy1} alt="case-study" />
                       </Link>
                     </div>

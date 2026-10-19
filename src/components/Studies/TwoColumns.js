@@ -18,14 +18,19 @@ const TwoColumns = () => {
                 <div className="image">
                   <img src={project1} alt="about" />
 
-                  <Link to="/case-studies/case-studies-details" className="link-btn">
+                  <Link
+                    to="/case-studies/case-studies-details"
+                    className="link-btn"
+                  >
                     <i className="bx bx-plus"></i>
                   </Link>
                 </div>
 
                 <div className="content">
                   <h3>
-                    <Link to="/case-studies/case-studies-details">Movie Recommendation</Link>
+                    <Link to="/case-studies/case-studies-details">
+                      Movie Recommendation
+                    </Link>
                   </h3>
                   <span>System Project</span>
                 </div>
@@ -37,7 +42,10 @@ const TwoColumns = () => {
                 <div className="image">
                   <img src={project2} alt="about" />
 
-                  <Link to="/case-studies/case-studies-details" className="link-btn">
+                  <Link
+                    to="/case-studies/case-studies-details"
+                    className="link-btn"
+                  >
                     <i className="bx bx-plus"></i>
                   </Link>
                 </div>
@@ -58,14 +66,19 @@ const TwoColumns = () => {
                 <div className="image">
                   <img src={project3} alt="about" />
 
-                  <Link to="/case-studies/case-studies-details" className="link-btn">
+                  <Link
+                    to="/case-studies/case-studies-details"
+                    className="link-btn"
+                  >
                     <i className="bx bx-plus"></i>
                   </Link>
                 </div>
 
                 <div className="content">
                   <h3>
-                    <Link to="/case-studies/case-studies-details">Data Analysis</Link>
+                    <Link to="/case-studies/case-studies-details">
+                      Data Analysis
+                    </Link>
                   </h3>
                   <span>Web Project</span>
                 </div>
@@ -77,14 +90,19 @@ const TwoColumns = () => {
                 <div className="image">
                   <img src={project4} alt="about" />
 
-                  <Link to="/case-studies/case-studies-details" className="link-btn">
+                  <Link
+                    to="/case-studies/case-studies-details"
+                    className="link-btn"
+                  >
                     <i className="bx bx-plus"></i>
                   </Link>
                 </div>
 
                 <div className="content">
                   <h3>
-                    <Link to="/case-studies/case-studies-details">Detection Project</Link>
+                    <Link to="/case-studies/case-studies-details">
+                      Detection Project
+                    </Link>
                   </h3>
                   <span>Programming</span>
                 </div>
@@ -96,14 +114,19 @@ const TwoColumns = () => {
                 <div className="image">
                   <img src={project5} alt="about" />
 
-                  <Link to="/case-studies/case-studies-details" className="link-btn">
+                  <Link
+                    to="/case-studies/case-studies-details"
+                    className="link-btn"
+                  >
                     <i className="bx bx-plus"></i>
                   </Link>
                 </div>
 
                 <div className="content">
                   <h3>
-                    <Link to="/case-studies/case-studies-details">Data Scientist</Link>
+                    <Link to="/case-studies/case-studies-details">
+                      Data Scientist
+                    </Link>
                   </h3>
                   <span>Data Science</span>
                 </div>
@@ -115,14 +138,19 @@ const TwoColumns = () => {
                 <div className="image">
                   <img src={project6} alt="about" />
 
-                  <Link to="/case-studies/case-studies-details" className="link-btn">
+                  <Link
+                    to="/case-studies/case-studies-details"
+                    className="link-btn"
+                  >
                     <i className="bx bx-plus"></i>
                   </Link>
                 </div>
 
                 <div className="content">
                   <h3>
-                    <Link to="/case-studies/case-studies-details">Benefits Research</Link>
+                    <Link to="/case-studies/case-studies-details">
+                      Benefits Research
+                    </Link>
                   </h3>
                   <span>Science Projects</span>
                 </div>

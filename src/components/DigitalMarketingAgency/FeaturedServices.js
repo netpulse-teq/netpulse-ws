@@ -70,7 +70,9 @@ const FeaturedServices = () => {
                 </div>
 
                 <h3>
-                  <Link to="/services/service-details">Website Optimization</Link>
+                  <Link to="/services/service-details">
+                    Website Optimization
+                  </Link>
                 </h3>
 
                 <p>

@@ -2,11 +2,14 @@ import React from "react"
 import AOS from "aos"
 import { Link } from "gatsby"
 import bannerImg from "../../images/banner-img1.png"
+import { useTranslation } from "../../utils/useTranslation"
 
 const Banner = () => {
   React.useEffect(() => {
     AOS.init()
   }, [])
+
+  const { t } = useTranslation()
 
   return (
     <>
@@ -20,7 +23,7 @@ const Banner = () => {
                   data-aos-duration="1200"
                   data-aos-delay="100"
                 >
-                  Secure IT Solutions Services
+                  {t("bannerTitle")}
                 </h1>
 
                 <p
@@ -28,8 +31,7 @@ const Banner = () => {
                   data-aos-duration="1200"
                   data-aos-delay="200"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  {t("bannerDesc")}
                 </p>
 
                 <div
@@ -40,7 +42,7 @@ const Banner = () => {
                 >
                   <Link to="/contact" className="default-btn">
                     <i className="flaticon-right"></i>
-                    Get Started <span></span>
+                    {t("getStarted")} <span></span>
                   </Link>
                 </div>
               </div>

@@ -36,7 +36,9 @@ const FeaturedServices = () => {
                   <i className="flaticon-structure"></i>
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Website Optimization</Link>
+                  <Link to="/services/service-details">
+                    Website Optimization
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

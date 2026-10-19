@@ -19,7 +19,6 @@ import Footer from "../components/_App/Footer"
 const DataScienceOnlineCoursesPage = () => {
   return (
     <Layout>
-
       <Navbar />
 
       <MainBanner />
@@ -47,7 +46,6 @@ const DataScienceOnlineCoursesPage = () => {
       <Subscribe />
 
       <Footer />
-      
     </Layout>
   )
 }

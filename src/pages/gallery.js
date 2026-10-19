@@ -62,7 +62,7 @@ export default class Gallery extends Component {
                     onClick={() =>
                       this.setState({ isOpen: true, photoIndex: 0 })
                     }
-                   aria-hidden="true"
+                    aria-hidden="true"
                   >
                     <img src={gallery1} alt="event" />
                   </div>
@@ -76,7 +76,7 @@ export default class Gallery extends Component {
                     onClick={() =>
                       this.setState({ isOpen: true, photoIndex: 1 })
                     }
-                   aria-hidden="true"
+                    aria-hidden="true"
                   >
                     <img src={gallery2} alt="event" />
                   </div>
@@ -90,7 +90,7 @@ export default class Gallery extends Component {
                     onClick={() =>
                       this.setState({ isOpen: true, photoIndex: 2 })
                     }
-                   aria-hidden="true"
+                    aria-hidden="true"
                   >
                     <img src={gallery3} alt="event" />
                   </div>
@@ -104,7 +104,7 @@ export default class Gallery extends Component {
                     onClick={() =>
                       this.setState({ isOpen: true, photoIndex: 3 })
                     }
-                   aria-hidden="true"
+                    aria-hidden="true"
                   >
                     <img src={gallery4} alt="event" />
                   </div>
@@ -118,7 +118,7 @@ export default class Gallery extends Component {
                     onClick={() =>
                       this.setState({ isOpen: true, photoIndex: 4 })
                     }
-                   aria-hidden="true"
+                    aria-hidden="true"
                   >
                     <img src={gallery5} alt="event" />
                   </div>
@@ -132,7 +132,7 @@ export default class Gallery extends Component {
                     onClick={() =>
                       this.setState({ isOpen: true, photoIndex: 5 })
                     }
-                   aria-hidden="true"
+                    aria-hidden="true"
                   >
                     <img src={gallery6} alt="event" />
                   </div>
@@ -146,7 +146,7 @@ export default class Gallery extends Component {
                     onClick={() =>
                       this.setState({ isOpen: true, photoIndex: 6 })
                     }
-                   aria-hidden="true"
+                    aria-hidden="true"
                   >
                     <img src={gallery7} alt="event" />
                   </div>
@@ -160,7 +160,7 @@ export default class Gallery extends Component {
                     onClick={() =>
                       this.setState({ isOpen: true, photoIndex: 7 })
                     }
-                   aria-hidden="true"
+                    aria-hidden="true"
                   >
                     <img src={gallery8} alt="event" />
                   </div>
@@ -174,7 +174,7 @@ export default class Gallery extends Component {
                     onClick={() =>
                       this.setState({ isOpen: true, photoIndex: 8 })
                     }
-                   aria-hidden="true"
+                    aria-hidden="true"
                   >
                     <img src={gallery9} alt="event" />
                   </div>

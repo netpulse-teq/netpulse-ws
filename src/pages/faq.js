@@ -16,7 +16,6 @@ import Footer from "../components/_App/Footer"
 const FAQPage = () => {
   return (
     <Layout>
-
       <Navbar />
 
       <PageBanner
@@ -124,7 +123,6 @@ const FAQPage = () => {
       <StartProject />
 
       <Footer />
-
     </Layout>
   )
 }

@@ -52,7 +52,9 @@ const Services = () => {
                   <img src={ServiceIcon2} alt="Service Icon" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">AI & ML Development</Link>
+                  <Link to="/services/service-details">
+                    AI & ML Development
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -90,7 +92,9 @@ const Services = () => {
                   <img src={ServiceIcon4} alt="Service Icon" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Predictive Analytics</Link>
+                  <Link to="/services/service-details">
+                    Predictive Analytics
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -109,7 +113,9 @@ const Services = () => {
                   <img src={ServiceIcon5} alt="Service Icon" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Software Development</Link>
+                  <Link to="/services/service-details">
+                    Software Development
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

@@ -4,8 +4,11 @@ import team1 from "../../images/team/team1.jpg"
 import team2 from "../../images/team/team2.jpg"
 import team3 from "../../images/team/team4.jpg"
 import team4 from "../../images/team/team4.jpg"
+import { useTranslation } from "../../utils/useTranslation"
 
 const TeamMember = () => {
+  const { t } = useTranslation()
+
   return (
     <>
       <section className="scientist-area pt-100 pb-70">
@@ -13,13 +16,10 @@ const TeamMember = () => {
           <div className="section-title">
             <span className="sub-title">
               <img src={starIcon} alt="team" />
-              Team Members
+              {t("teamSubTitle")}
             </span>
-            <h2>Our Awesome Team</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
-            </p>
+            <h2>{t("teamTitle")}</h2>
+            <p>{t("teamDesc")}</p>
           </div>
 
           <div className="row">
@@ -73,7 +73,7 @@ const TeamMember = () => {
                 </div>
                 <div className="content">
                   <h3>Merv Adrian</h3>
-                  <span>CEO & Founder</span>
+                  <span>{t("roleCeo")}</span>
                 </div>
               </div>
             </div>
@@ -128,7 +128,7 @@ const TeamMember = () => {
                 </div>
                 <div className="content">
                   <h3>Kirk Borne</h3>
-                  <span>UX/UI Designer</span>
+                  <span>{t("roleDesigner")}</span>
                 </div>
               </div>
             </div>
@@ -183,7 +183,7 @@ const TeamMember = () => {
                 </div>
                 <div className="content">
                   <h3>Carla Gentry</h3>
-                  <span>Web Developer</span>
+                  <span>{t("roleDeveloper")}</span>
                 </div>
               </div>
             </div>
@@ -238,7 +238,7 @@ const TeamMember = () => {
                 </div>
                 <div className="content">
                   <h3>Marie Curie</h3>
-                  <span>Support</span>
+                  <span>{t("roleSupport")}</span>
                 </div>
               </div>
             </div>

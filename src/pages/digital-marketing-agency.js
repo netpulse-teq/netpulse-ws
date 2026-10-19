@@ -19,7 +19,6 @@ import Footer from "../components/_App/Footer"
 const DigitalMarketingAgencyPage = () => {
   return (
     <Layout>
-      
       <NavbarTwo />
 
       <MainBanner />
@@ -47,7 +46,6 @@ const DigitalMarketingAgencyPage = () => {
       <OurBlog />
 
       <Footer />
-
     </Layout>
   )
 }

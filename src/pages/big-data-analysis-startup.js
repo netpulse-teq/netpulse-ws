@@ -19,7 +19,6 @@ import Footer from "../components/_App/Footer"
 const BigDataAnalysisStartup = () => {
   return (
     <Layout>
-      
       <Navbar />
 
       <MainBanner />
@@ -45,9 +44,8 @@ const BigDataAnalysisStartup = () => {
       <BlogPost />
 
       <StartProject />
-      
-      <Footer />
 
+      <Footer />
     </Layout>
   )
 }

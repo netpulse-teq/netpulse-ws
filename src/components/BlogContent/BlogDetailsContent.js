@@ -328,7 +328,10 @@ const BlogDetailsContent = () => {
                             </div>
 
                             <div className="reply">
-                              <Link to="#comment" className="comment-reply-link">
+                              <Link
+                                to="#comment"
+                                className="comment-reply-link"
+                              >
                                 Reply
                               </Link>
                             </div>
@@ -363,7 +366,10 @@ const BlogDetailsContent = () => {
                                 </div>
 
                                 <div className="reply">
-                                  <Link to="#comment" className="comment-reply-link">
+                                  <Link
+                                    to="#comment"
+                                    className="comment-reply-link"
+                                  >
                                     Reply
                                   </Link>
                                 </div>
@@ -437,7 +443,10 @@ const BlogDetailsContent = () => {
                             </div>
 
                             <div className="reply">
-                              <Link to="#comment" className="comment-reply-link">
+                              <Link
+                                to="#comment"
+                                className="comment-reply-link"
+                              >
                                 Reply
                               </Link>
                             </div>

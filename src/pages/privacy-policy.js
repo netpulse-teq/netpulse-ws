@@ -9,7 +9,6 @@ import privacyPolicy from "../images/privacy-policy.jpg"
 const PrivacyPolicyPage = () => {
   return (
     <Layout>
-
       <Navbar />
 
       <PageBanner
@@ -127,7 +126,6 @@ const PrivacyPolicyPage = () => {
       </section>
 
       <Footer />
-      
     </Layout>
   )
 }

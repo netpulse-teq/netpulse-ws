@@ -22,11 +22,7 @@ const MainBanner = () => {
               Big Data, AI & ML Consulting!
             </h1>
 
-            <p
-              data-aos="fade-up"
-              data-aos-duration="1200"
-              data-aos-delay="200"
-            >
+            <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
               Get all kinds of hi-tech decesion making consulting services using
               Artificial Intelligence and Machine Learning from one umbrella.
             </p>

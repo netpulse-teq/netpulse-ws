@@ -21,7 +21,8 @@ const NotFoundPage = () => (
 
               <div className="btn-box">
                 <Link to="/" className="default-btn">
-                  <i className="flaticon-history"></i>Go Back Homepage<span></span>
+                  <i className="flaticon-history"></i>Go Back Homepage
+                  <span></span>
                 </Link>
               </div>
             </div>

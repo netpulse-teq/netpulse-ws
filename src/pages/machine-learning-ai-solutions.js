@@ -18,7 +18,6 @@ import Footer from "../components/_App/Footer"
 const MachineLearningAiSolutionsPage = () => {
   return (
     <Layout>
-
       <NavbarTwo />
 
       <MainBanner />
@@ -44,7 +43,6 @@ const MachineLearningAiSolutionsPage = () => {
       <ProjectStartArea />
 
       <Footer />
-      
     </Layout>
   )
 }

@@ -10,7 +10,6 @@ import Footer from "../../components/_App/Footer"
 const CourseDetailsPage = () => {
   return (
     <Layout>
-
       <Navbar />
 
       <PageBanner
@@ -25,7 +24,6 @@ const CourseDetailsPage = () => {
       <RelatedCourses />
 
       <Footer />
-
     </Layout>
   )
 }

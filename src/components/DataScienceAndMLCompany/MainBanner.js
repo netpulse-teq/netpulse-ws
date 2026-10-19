@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import AOS from "aos";
+import AOS from "aos"
 import FsLightbox from "fslightbox-react"
 
 import { Link } from "gatsby"
@@ -21,8 +21,8 @@ const MainBanner = () => {
   const [toggler, setToggler] = useState(false)
 
   React.useEffect(() => {
-    AOS.init();
-  }, []);
+    AOS.init()
+  }, [])
 
   return (
     <>
@@ -36,7 +36,7 @@ const MainBanner = () => {
           <div className="row">
             <div className="col-lg-5 col-md-12">
               <div className="main-banner-content">
-                <h1 
+                <h1
                   data-aos="fade-right"
                   data-aos-duration="1200"
                   data-aos-delay="100"
@@ -44,7 +44,7 @@ const MainBanner = () => {
                   Data Science Consulting Services
                 </h1>
 
-                <p 
+                <p
                   data-aos="fade-right"
                   data-aos-duration="1200"
                   data-aos-delay="200"
@@ -54,7 +54,7 @@ const MainBanner = () => {
                   free decesion making!
                 </p>
 
-                <div 
+                <div
                   className="btn-box"
                   data-aos="fade-left"
                   data-aos-duration="1200"

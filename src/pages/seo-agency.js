@@ -20,7 +20,6 @@ import Footer from "../components/_App/Footer"
 const SeoAgencyPage = () => {
   return (
     <Layout>
-
       <Navbar />
 
       <Banner />
@@ -50,7 +49,6 @@ const SeoAgencyPage = () => {
       <OurBlog />
 
       <Footer />
-      
     </Layout>
   )
 }

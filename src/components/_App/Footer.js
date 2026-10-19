@@ -2,9 +2,11 @@ import React from "react"
 import { Link } from "gatsby"
 import logo from "../../images/logo.png"
 import footerMap from "../../images/footer-map.png"
+import { useTranslation } from "../../utils/useTranslation"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
+  const { t } = useTranslation()
 
   return (
     <footer className="footer-area bg-color">
@@ -15,11 +17,7 @@ const Footer = () => {
               <Link to="/" className="logo">
                 <img src={logo} alt="logo" />
               </Link>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-                suspendisse.
-              </p>
+              <p>{t("footerDesc")}</p>
 
               <ul className="social-link">
                 <li>
@@ -68,23 +66,23 @@ const Footer = () => {
 
           <div className="col-lg-2 col-sm-6">
             <div className="single-footer-widget pl-5">
-              <h3>Explore</h3>
+              <h3>{t("footerExplore")}</h3>
 
               <ul className="footer-links-list">
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link to="/">{t("home")}</Link>
                 </li>
                 <li>
-                  <Link to="/about-us">About</Link>
+                  <Link to="/about-us">{t("aboutUs")}</Link>
                 </li>
                 <li>
-                  <Link to="/case-studies">Case Studies</Link>
+                  <Link to="/case-studies">{t("caseStudies")}</Link>
                 </li>
                 <li>
-                  <Link to="/blog">Our Blog</Link>
+                  <Link to="/blog">{t("blog")}</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <Link to="/contact">{t("contact")}</Link>
                 </li>
               </ul>
             </div>
@@ -92,23 +90,23 @@ const Footer = () => {
 
           <div className="col-lg-2 col-sm-6">
             <div className="single-footer-widget">
-              <h3>Resources</h3>
+              <h3>{t("footerResources")}</h3>
 
               <ul className="footer-links-list">
                 <li>
-                  <Link to="/team">Our Scientists</Link>
+                  <Link to="/team">{t("footerScientists")}</Link>
                 </li>
                 <li>
-                  <Link to="/services">Our Services</Link>
+                  <Link to="/services">{t("services")}</Link>
                 </li>
                 <li>
-                  <Link to="/testimonials">Testimonials</Link>
+                  <Link to="/testimonials">{t("testimonials")}</Link>
                 </li>
                 <li>
-                  <Link to="/services">SaaS Solutions</Link>
+                  <Link to="/services">{t("footerSaaS")}</Link>
                 </li>
                 <li>
-                  <Link to="/case-studies">Case Studies</Link>
+                  <Link to="/case-studies">{t("caseStudies")}</Link>
                 </li>
               </ul>
             </div>
@@ -116,25 +114,27 @@ const Footer = () => {
 
           <div className="col-lg-4 col-sm-6">
             <div className="single-footer-widget">
-              <h3>Address</h3>
+              <h3>{t("footerAddress")}</h3>
 
               <ul className="footer-contact-info">
                 <li>
                   <i className="bx bx-map"></i>
-                  175 5th Ave, New York, NY 10010, <br /> United States
+                  15 AVENUE ANDRE DILIGENT, 59100 ROUBAIX <br /> France
                 </li>
-                <li>
+                {/* <li>
                   <i className="bx bx-phone-call"></i>
-                  <a href="tel:11234567890">+1 (123) 456 7890</a>
-                </li>
+                  <a href="tel:+33761103756">+33 (0)7 61 10 37 56</a>
+                </li> */}
                 <li>
                   <i className="bx bx-envelope"></i>
-                  <a href="mailto:hello@rewy.com">hello@rewy.com</a>
+                  <a href="mailto:commercial@netpulse.fr">
+                    commercial@netpulse.fr
+                  </a>
                 </li>
-                <li>
+                {/* <li>
                   <i className="bx bxs-inbox"></i>
                   <a href="tel:+557854578964">+55 785 4578964</a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -144,25 +144,18 @@ const Footer = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-6">
               <p>
-                Copyright @{currentYear} <strong>Rewy</strong> All rights
-                reserved{" "}
-                <a
-                  target="_blank"
-                  href="https://envytheme.com/"
-                  rel="noreferrer"
-                >
-                  EnvyTheme
-                </a>
+                Copyright @{currentYear} <strong>Netpulse</strong>{" "}
+                {t("footerRights")}
               </p>
             </div>
 
             <div className="col-lg-6 col-md-6">
               <ul>
                 <li>
-                  <Link to="/privacy-policy">Privacy Policy</Link>
+                  <Link to="/privacy-policy">{t("privacyPolicy")}</Link>
                 </li>
                 <li>
-                  <Link to="/terms-of-service">Terms & Conditions</Link>
+                  <Link to="/terms-of-service">{t("footerTerms")}</Link>
                 </li>
               </ul>
             </div>

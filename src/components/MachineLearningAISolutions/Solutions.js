@@ -27,7 +27,9 @@ const Solutions = () => {
                   <i className="flaticon-rocket"></i>
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Startup Applications</Link>
+                  <Link to="/services/service-details">
+                    Startup Applications
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -35,7 +37,10 @@ const Solutions = () => {
                   adipiscing aliqua.
                 </p>
 
-                <Link to="/services/service-details" className="view-details-btn">
+                <Link
+                  to="/services/service-details"
+                  className="view-details-btn"
+                >
                   View Details
                 </Link>
               </div>
@@ -55,7 +60,10 @@ const Solutions = () => {
                   adipiscing aliqua.
                 </p>
 
-                <Link to="/services/service-details" className="view-details-btn">
+                <Link
+                  to="/services/service-details"
+                  className="view-details-btn"
+                >
                   View Details
                 </Link>
               </div>
@@ -67,7 +75,9 @@ const Solutions = () => {
                   <i className="flaticon-money"></i>
                 </div>
                 <h3>
-                  <Link to="/services/service-details">eCommerce Platforms</Link>
+                  <Link to="/services/service-details">
+                    eCommerce Platforms
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -75,7 +85,10 @@ const Solutions = () => {
                   adipiscing aliqua.
                 </p>
 
-                <Link to="/services/service-details" className="view-details-btn">
+                <Link
+                  to="/services/service-details"
+                  className="view-details-btn"
+                >
                   View Details
                 </Link>
               </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import AOS from "aos";
+import AOS from "aos"
 import FsLightbox from "fslightbox-react"
 import { Link } from "gatsby"
 
@@ -21,8 +21,8 @@ const MainBanner = () => {
   const [toggler, setToggler] = useState(false)
 
   React.useEffect(() => {
-    AOS.init();
-  }, []);
+    AOS.init()
+  }, [])
 
   return (
     <>

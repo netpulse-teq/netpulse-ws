@@ -13,7 +13,9 @@ const ServicesOne = () => {
                   <i className="flaticon-rocket"></i>
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Startup Applications</Link>
+                  <Link to="/services/service-details">
+                    Startup Applications
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -21,7 +23,10 @@ const ServicesOne = () => {
                   adipiscing aliqua.
                 </p>
 
-                <Link className="view-details-btn" to="/services/service-details">
+                <Link
+                  className="view-details-btn"
+                  to="/services/service-details"
+                >
                   View Details
                 </Link>
               </div>
@@ -43,7 +48,10 @@ const ServicesOne = () => {
                   adipiscing aliqua.
                 </p>
 
-                <Link className="view-details-btn" to="/services/service-details">
+                <Link
+                  className="view-details-btn"
+                  to="/services/service-details"
+                >
                   View Details
                 </Link>
               </div>
@@ -56,7 +64,9 @@ const ServicesOne = () => {
                 </div>
 
                 <h3>
-                  <Link to="/services/service-details">eCommerce Platforms</Link>
+                  <Link to="/services/service-details">
+                    eCommerce Platforms
+                  </Link>
                 </h3>
 
                 <p>
@@ -65,7 +75,10 @@ const ServicesOne = () => {
                   adipiscing aliqua.
                 </p>
 
-                <Link className="view-details-btn" to="/services/service-details">
+                <Link
+                  className="view-details-btn"
+                  to="/services/service-details"
+                >
                   View Details
                 </Link>
               </div>
@@ -87,7 +100,10 @@ const ServicesOne = () => {
                   adipiscing aliqua.
                 </p>
 
-                <Link className="view-details-btn" to="/services/service-details">
+                <Link
+                  className="view-details-btn"
+                  to="/services/service-details"
+                >
                   View Details
                 </Link>
               </div>
@@ -109,7 +125,10 @@ const ServicesOne = () => {
                   adipiscing aliqua.
                 </p>
 
-                <Link className="view-details-btn" to="/services/service-details">
+                <Link
+                  className="view-details-btn"
+                  to="/services/service-details"
+                >
                   View Details
                 </Link>
               </div>
@@ -131,7 +150,10 @@ const ServicesOne = () => {
                   adipiscing aliqua.
                 </p>
 
-                <Link className="view-details-btn" to="/services/service-details">
+                <Link
+                  className="view-details-btn"
+                  to="/services/service-details"
+                >
                   View Details
                 </Link>
               </div>

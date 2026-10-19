@@ -2,8 +2,11 @@ import React from "react"
 import { Link } from "gatsby"
 import projectStart from "../../images/project-start1.png"
 import shape from "../../images/shape/circle-shape1.png"
+import { useTranslation } from "../../utils/useTranslation"
 
 const ProjectStartArea = () => {
+  const { t } = useTranslation()
+
   return (
     <>
       <div className="project-start-area ptb-100">
@@ -17,15 +20,12 @@ const ProjectStartArea = () => {
 
             <div className="col-lg-6 col-md-12">
               <div className="project-start-content">
-                <h2>We Like to Start Your Project With Us</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
-                </p>
+                <h2>{t("startProjectTitle")}</h2>
+                <p>{t("startProjectDesc")}</p>
 
                 <Link to="/contact" className="default-btn">
                   <i className="flaticon-web"></i>
-                  Get Started
+                  {t("getStarted")}
                   <span></span>
                 </Link>
               </div>
